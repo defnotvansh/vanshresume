@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vansh Garg - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Colour palette: #071B2B  #167D8D  #B9E4E8  #EEEEEE */
+    :root {
+      --dark: #071b2b;
+      --teal: #167d8d;
+      --light: #b9e4e8;
+      --grey: #eeeeee;
+    }
+
+    * {
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      font-weight: 500;
+      background-color: var(--grey);
+      color: var(--dark);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dark);
+      color: var(--grey);
+      padding: 25px 20px;
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .photo {
+      margin: 0;
+      width: 120px;
+      height: 150px;
+      border: 3px solid var(--teal);
+      background-color: var(--light);
+      color: var(--dark);
+      font-size: 40px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .photo img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 800;
+    }
+
+    header p {
+      margin: 4px 0;
+    }
+
+    .tagline {
+      color: var(--light);
+      font-weight: 600;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    header address a {
+      color: var(--light);
+      font-weight: 700;
+    }
+
+    .buttons {
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--teal);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 20px;
+      margin-right: 10px;
+      border-radius: 4px;
+      border: 2px solid var(--teal);
+    }
+
+    .btn:hover {
+      background-color: var(--light);
+      color: var(--dark);
+      border-color: var(--light);
+    }
+
+    nav {
+      background-color: var(--teal);
+      padding: 12px 20px;
+    }
+
+    nav a {
+      color: white;
+      font-weight: 700;
+      margin-right: 18px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--dark);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+
+    h2 {
+      color: var(--teal);
+      font-weight: 800;
+      border-bottom: 3px solid var(--teal);
+      padding-bottom: 4px;
+    }
+
+    h3 {
+      margin-bottom: 0;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    h4 {
+      color: var(--teal);
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .columns {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 250px;
+      border-right: 3px solid var(--teal);
+      padding-right: 20px;
+    }
+
+    .right {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    time {
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+    }
+
+    th, td {
+      border: 2px solid var(--teal);
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--light);
+      font-weight: 700;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: var(--grey);
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <figure class="photo">
+      <img src="photo.jpg" alt="">
+    </figure>
+    <div>
+      <h1>Vansh Garg</h1>
+      <p class="tagline">Freelance Graphic Designer and Video Editor</p>
+      <address>
+        Email: <a href="mailto:vansh.garg26@iimb.ac.in">vansh.garg26@iimb.ac.in</a><br>
+        Phone: <a href="tel:+919354561121">+91 93545 61121</a>
+      </address>
+      <div class="buttons">
+        <a class="btn" href="https://www.linkedin.com/in/vnnshgarg" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://drive.google.com/drive/folders/11Ui2L_5FEFz2Yvz_yYSxY6o9r5Nxtgfm" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#activities">Extracurricular</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a student currently pursuing BBA DBE at Indian Institute of Management, Bangalore
+        and I also cleared CA Foundation exam conducted by Institute of Chartered Accountants of India.
+        Since 2020 I have being working as a freelance graphic designer and video editor and I love to care
+        for animals therefore, I'm a student volunteer at People for Animals NGO. My goal is to combine my creative skills with business and
+        finance knowledge to build a successful career.
+      </p>
+    </section>
+
+    <div class="columns">
+
+      <section id="education" class="left">
+        <h2>Education</h2>
+
+        <article>
+          <h3>BBA - IIM Bangalore</h3>
+          <p>Indian Institute of Management Bangalore<br>
+          <time>2026 - 2029</time></p>
+        </article>
+
+        <article>
+          <h3>ICAI</h3>
+          <p>Institute of Chartered Accountants of India<br>
+          <time>2024 - 2029</time></p>
+        </article>
+
+        <article>
+          <h3>S.D. School</h3>
+          <p>School education<br>
+          <time>2018 - 2024</time></p>
+        </article>
+      </section>
+
+      <section id="experience" class="right">
+        <h2>Experience</h2>
+
+        <h3>Work Experience</h3>
+        <article>
+          <h4>Freelance Graphic Designer and Video Editor</h4>
+          <p><time>2020 - Present</time></p>
+          <ul>
+            <li>Designing graphics according to client needs</li>
+            <li>Editing videos for clients</li>
+            <li>Managing my own projects and deadlines</li>
+          </ul>
+        </article>
+
+        <h3>Social Volunteering</h3>
+        <article>
+          <h4>People for Animals NGO</h4>
+          <p>Student Member<br>
+          <time>2025 - Present</time></p>
+        </article>
+      </section>
+
+    </div>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Dualsity Powerbank</h3>
+        <p>Developed a Solar Power Bank from Scratch in the Entrepreurship Team including Product Development, Packaging and Label designing.
+          We named the powerbank Dualsity because of its dual channels of charging. </p>
+        <p><b>Skills learnt:</b> Product Development, Adobe Photoshop, Canva, Teamwork and Collaboration.</p>
+      </article>
+
+      <article>
+        <h3>Freelance Design and Video Work</h3>
+        <p>Graphics and edited videos that I have made for clients since 2020.</p>
+        <p><b>Skills learnt:</b> Canva, Figma, Premiere Pro, Davinci Resolve, Negotiation.</p>
+      </article>
+
+      <article>
+        <h3>Ellefleur Perfumes</h3>
+        <p>Developed and Sold Authentic perfumes to Lower Middle - Middle Class Income Segment who can't afford Expensive Perfumes.</p>
+        <p><b>Skills learnt:</b> Sales, Marketing, Leadership.</p>
+      </article>
+    </section>
+
+    <section id="activities">
+      <h2>Extracurricular Activities</h2>
+      <ul>
+        <li>Lead Designer at Entrepreneurship Team</li>
+        <li>Secured Second Position at Entrepreneurship Interschool Competition</li>
+        <li>Participated in Filmmaking Competitions and directed a few Short Films.</li>
+        <li>Student Member at People for Animals India</li>
+
+
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <th>Hardskill</th>
+          <th>Softskill</th>
+        </tr>
+        <tr>
+          <td>Graphic Design</td>
+          <td>Leadership</td>
+        </tr>
+        <tr>
+          <td>Video Editing</td>
+          <td>Problem Solving</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>Negotitation</td>
+        </tr>
+        <tr>
+          <td>Artificial intelligence</td>
+          <td>Teamwork and Collaboration</td>
+        </tr>
+        <tr>
+          <td>Sales and Marketing</td>
+          <td>Communiation Skills</td>
+        </tr>
+      </table>
+
+      <h3>Tools</h3>
+      <ul>
+        <li>Canva</li>
+        <li>Microsoft Office 365</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Premiere Pro</li>
+        <li>Capcut</li>
+        <li>Figma</li>
+        <li>Tally</li>
+        <li>Busy</li>
+      </ul>
+      <h3>Languages</h3>
+      <ul>
+        <li>Hindi</li>
+        <li>English</li>
+        <li>Gujarati</li>
+        <li>Telugu</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me using the details below.</p>
+      <table>
+        <tr>
+          <th>Email</th>
+          <td><a href="mailto:vansh.garg26@iimb.ac.in">vansh.garg26@iimb.ac.in</a></td>
+        </tr>
+        <tr>
+          <th>Phone</th>
+          <td><a href="tel:+919354561121">+91 93545 61121</a></td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vansh Garg</p>
+  </footer>
+
+</body>
+</html>
