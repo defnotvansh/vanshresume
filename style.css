@@ -1,0 +1,188 @@
+/* Colour palette: #071B2B  #167D8D  #B9E4E8  #EEEEEE */
+:root {
+  --dark: #071b2b;
+  --teal: #167d8d;
+  --light: #b9e4e8;
+  --grey: #eeeeee;
+}
+
+* {
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  font-weight: 500;
+  background-color: var(--grey);
+  color: var(--dark);
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--dark);
+  color: var(--grey);
+  padding: 25px 20px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo {
+  margin: 0;
+  width: 120px;
+  height: 150px;
+  border: 3px solid var(--teal);
+  background-color: var(--light);
+  color: var(--dark);
+  font-size: 40px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.photo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+header p {
+  margin: 4px 0;
+}
+
+.tagline {
+  color: var(--light);
+  font-weight: 600;
+}
+
+address {
+  font-style: normal;
+}
+
+header address a {
+  color: var(--light);
+  font-weight: 700;
+}
+
+.buttons {
+  margin-top: 12px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--teal);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 2px solid var(--teal);
+}
+
+.btn:hover {
+  background-color: var(--light);
+  color: var(--dark);
+  border-color: var(--light);
+}
+
+nav {
+  background-color: var(--teal);
+  padding: 12px 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: 700;
+  margin-right: 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--dark);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+h2 {
+  color: var(--teal);
+  font-weight: 800;
+  border-bottom: 3px solid var(--teal);
+  padding-bottom: 4px;
+}
+
+h3 {
+  margin-bottom: 0;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+h4 {
+  color: var(--teal);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.columns {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  min-width: 250px;
+  border-right: 3px solid var(--teal);
+  padding-right: 20px;
+}
+
+.right {
+  flex: 1;
+  min-width: 250px;
+}
+
+time {
+  color: var(--teal);
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+th, td {
+  border: 2px solid var(--teal);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--light);
+  font-weight: 700;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--grey);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-weight: 600;
+}
